@@ -109,14 +109,7 @@ public class Main {
         return a;
     }
 
-    //đảo ngược chuỗi
-    public static String reverseString(String str) {
-        StringBuilder reversed = new StringBuilder();
-        for (int i = str.length() - 1; i >= 0; i--) {
-            reversed.append(str.charAt(i));
-        }
-        return reversed.toString();
-    }
+  
 
     //Tính tổng của các chữ số trong một số nguyên.
     public static int calculateSumOfDigits(int number) {
@@ -158,12 +151,12 @@ public class Main {
             }
         }
 
-        int distinctCount = 1;
+        int Count = 1;
         int prev = arr[arr.length - 1];
         for (int i = arr.length - 2; i >= 0; i--) {
             if (arr[i] != prev) {
-                distinctCount++;
-                if (distinctCount == k) {
+                Count++;
+                if (Count == k) {
                     return arr[i];
                 }
             }
